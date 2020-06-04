@@ -148,6 +148,7 @@ class Board extends React.Component {
     }
     return (
       <div style={containerStyle} className="gameBoard">
+        <div className="status" style={instructionsStyle}><h4>Game ON 😉</h4></div>
         <div className="status" style={instructionsStyle}>Next player: {currentPlayer}</div>
         <div className="winner" style={instructionsStyle}>{isWinner ? `Winner is: ${isWinner}` : 'Winner: None'}</div>
         {isWinner ? <div>Click reset button to start new game!!!</div> : null}
